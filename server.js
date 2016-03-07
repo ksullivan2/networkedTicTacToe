@@ -19,10 +19,7 @@ http.listen(3000, function(){
 });
 
 
-
-var AI = require("./ticTacToeAI.js");
 var BoardModel = require("./ticTacToeModel.js");
-
 
 
 
