@@ -44,14 +44,15 @@ io.on('connection', function(socket){
   	};
 
 
-  socket.on('disconnect', function(socket){
+  socket.on('disconnect', function(){
   	console.log("user disconnect")
 
   	//this doesn't work because once the user connects, i lose the socket information.
   	for (var i =0; i< controller.board.players.length; i++){
   		if (controller.board.players[i].socket === socket){
-  			controller.board.players.slice(i,1);
-  			console.log("removed player", controller.board.players)
+        console.log("deleting player ", controller.board.players[i].playerToken);
+  			controller.board.players.splice(i,1);
+
   		};
   	};
   });
