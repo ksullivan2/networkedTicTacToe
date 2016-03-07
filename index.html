@@ -1,0 +1,35 @@
+<!--THIS IS THE CLIENT SIDE FILE-->
+
+<html>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
+
+
+<body>
+	<h1>PLAY TIC TAC TOE!</h1>
+	<div id="mainDIV">
+		<div id="boardDIV">
+		</div>
+
+		<div id="gameOverDIV">
+			<h2 id="gameOverText"></h2>
+		</div>
+
+	</div>
+	<div id= "underBoardDIV">
+			<h3 id="waiting">waiting for opponent to join...</h3>
+		</div>
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="ticTacToeView.js"></script>
+<script>
+	drawBoard();
+	drawNewGameButton();	
+</script>
+</body> 
+
+</html>
