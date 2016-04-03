@@ -6,6 +6,6 @@ A first foray into Javascript and websockets. Only two players can play on the U
 -----------
   1. Either:
   	* visit https://networkedtictactoe.herokuapp.com
-  	* run "npm start" from command line
+  	* run `npm start` from command line
   2. You can simulate another opponent by using an incognito/private browsing window, or using another browser.
 
